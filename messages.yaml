@@ -1,0 +1,7 @@
+help:
+  usage: "usage: message <messages-path> <key> [--data <yaml-string>]"
+
+errors:
+  bad-path: "message: '{{path}}' is not a valid messages file"
+  bad-yaml: "message: '{{yaml}}' is not a valid YAML string"
+  bad-key: "message: '{{key}}' is invalid or missing data"

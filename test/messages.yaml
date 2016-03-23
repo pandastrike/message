@@ -1,0 +1,4 @@
+test-message: this is a test
+test:
+  message: this is also a test
+template: this is {{what}}

@@ -1,0 +1,40 @@
+{
+  "name": "message",
+  "version": "0.0.1",
+  "description": "Message lookup with templating",
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "messages.yaml"
+  ],
+  "bin": {
+    "message": "bin/message"
+  },
+  "scripts": {
+    "test": "coffee -o lib/ -c src/*.*coffee && coffee test/index.coffee",
+    "prepublish": "coffee -o lib/ -c src/*.*coffee",
+    "postpublish": "(node_modules/.bin/json -f package.json version | xargs -I version git tag -am version version) && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandastrike/message.git"
+  },
+  "keywords": [
+    "messages"
+  ],
+  "author": "Dan Yoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandastrike/message/issues"
+  },
+  "homepage": "https://github.com/pandastrike/message#readme",
+  "dependencies": {
+    "fairmont": "^1.0.0-beta-40",
+    "js-yaml": "^3.5.5",
+    "markup-js": "^1.5.21"
+  },
+  "devDependencies": {
+    "amen": "^1.0.0-alpha-06"
+  }
+}
