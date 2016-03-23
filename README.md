@@ -41,7 +41,19 @@ $ message my-messages.yaml farewell
 Goodbye!
 ```
 
-## API
+## Installation
+
+```
+npm install panda-messages
+```
+
+Or, if you want to use the CLI, you may want to use the `-g` option.
+
+```
+npm install -g panda-messages
+```
+
+## API Reference
 
 ### messages _path_
 
