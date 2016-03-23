@@ -1,5 +1,5 @@
 {
-  "name": "message",
+  "name": "panda-message",
   "version": "0.0.1",
   "description": "Message lookup with templating",
   "main": "lib/index.js",
