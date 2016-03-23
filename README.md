@@ -1,4 +1,4 @@
-# message
+# Panda Messages
 
 Javascript-based message lookup with support for message templates.
 
